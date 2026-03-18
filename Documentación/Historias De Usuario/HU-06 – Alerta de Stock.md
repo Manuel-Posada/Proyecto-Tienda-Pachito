@@ -19,13 +19,13 @@
 </tr>
 
 <tr>
-<td colspan="3"><b>¿Cómo opera?</b><br><br>
-Revisión manual.</td>
+<td colspan="3"><b>¿Cómo opera el sistema actualmente?</b><br><br>
+Actualmente el dueño debe revisar manualmente el inventario para identificar cuándo un producto está por agotarse, lo que puede ocasionar que algunos productos se terminen sin que se detecte a tiempo.</td>
 </tr>
 
 <tr>
-<td colspan="3"><b>¿Qué resuelve?</b><br><br>
-Notifica automáticamente.</td>
+<td colspan="3"><b>¿Qué problema ayuda a resolver? </b><br><br>
+Permite que el sistema notifique automáticamente cuando un producto alcanza un nivel mínimo de stock, facilitando la reposición oportuna y evitando pérdidas de ventas por falta de productos.</td>
 </tr>
 
 <tr>

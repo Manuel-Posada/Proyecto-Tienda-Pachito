@@ -19,13 +19,13 @@
 </tr>
 
 <tr>
-<td colspan="3"><b>¿Cómo opera?</b><br><br>
-Se calcula manualmente.</td>
+<td colspan="3"><b>¿Cómo opera el sistema actualmente? </b><br><br>
+Actualmente el dueño debe revisar manualmente las ventas registradas o sumar los valores de cada venta para conocer el total vendido durante el día, lo que puede consumir tiempo y generar errores en los cálculos.</td>
 </tr>
 
 <tr>
-<td colspan="3"><b>¿Qué resuelve?</b><br><br>
-Automatiza el cálculo.</td>
+<td colspan="3"><b>¿Qué problema ayuda a resolver?</b><br><br>
+Permite visualizar automáticamente un resumen de las ventas realizadas durante el día, mostrando el total vendido y la cantidad de productos vendidos, facilitando el control de los ingresos.</td>
 </tr>
 
 <tr>

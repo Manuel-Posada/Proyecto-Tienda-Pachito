@@ -19,13 +19,13 @@
 </tr>
 
 <tr>
-<td colspan="3"><b>¿Cómo opera?</b><br><br>
-Se actualiza manualmente o se revisa físicamente.</td>
+<td colspan="3"><b>¿Cómo opera el sistema actualmente? </b><br><br>
+Actualmente el inventario se actualiza manualmente después de cada venta o se revisa físicamente en la tienda, lo que puede generar errores en las cantidades disponibles y dificultar conocer el stock real de los productos.</td>
 </tr>
 
 <tr>
-<td colspan="3"><b>¿Qué resuelve?</b><br><br>
-Automatiza el inventario y evita errores.</td>
+<td colspan="3"><b>¿Qué problema ayuda a resolver?</b><br><br>
+Permite que el sistema actualice automáticamente el inventario cada vez que se registre una venta, mostrando el stock actualizado y evitando ventas de productos que no tienen suficiente disponibilidad.</td>
 </tr>
 
 <tr>

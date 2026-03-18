@@ -19,13 +19,13 @@
 </tr>
 
 <tr>
-<td colspan="3"><b>¿Cómo opera?</b><br><br>
-Registro manual informal.</td>
+<td colspan="3"><b>¿Cómo opera el sistema actualmente? <br><br>
+Actualmente las compras de productos a proveedores se registran manualmente o se recuerdan de forma informal, lo que puede generar inconsistencias entre los productos comprados y el inventario registrado.</td>
 </tr>
 
 <tr>
-<td colspan="3"><b>¿Qué resuelve?</b><br><br>
-Controla compras y actualiza stock.</td>
+<td colspan="3"><b>¿Qué problema ayuda a resolver?</b><br><br>
+Permite registrar las compras realizadas a proveedores dentro del sistema, actualizando automáticamente el inventario y manteniendo un control preciso de los productos disponibles.</td>
 </tr>
 
 <tr>
