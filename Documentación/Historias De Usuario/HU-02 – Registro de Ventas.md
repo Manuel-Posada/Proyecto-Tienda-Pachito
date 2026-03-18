@@ -21,14 +21,14 @@
 <tr>
 <td colspan="3">
 <b>¿Cómo opera el sistema actualmente?</b><br><br>
-Las ventas se registran manualmente o mentalmente, generando errores y desorganización.
+Actualmente las ventas se registran manualmente en cuadernos o se calculan mentalmente, lo que puede generar errores en el total de la venta y dificulta llevar un control organizado de las transacciones realizadas.
 </td>
 </tr>
 
 <tr>
 <td colspan="3">
 <b>¿Qué problema ayuda a resolver?</b><br><br>
-Permite registrar ventas automáticamente, calcular totales y mejorar el control.
+Permite registrar las ventas de manera rápida y automática en el sistema, calculando el total de la compra y almacenando la información para mejorar el control y organización de las ventas.
 </td>
 </tr>
 
