@@ -28,7 +28,7 @@ Actualmente los productos y sus precios se recuerdan de memoria o se anotan manu
 <tr>
 <td colspan="3">
 <b>¿Qué problema ayuda a resolver?</b><br><br>
-Permite registrar productos con nombre, precio y cantidad, facilitando el control del inventario.
+Permite registrar los productos con su nombre, precio y cantidad inicial en el sistema, evitando errores al vender, facilitando el control del inventario y permitiendo consultar o modificar los precios cuando sea necesario.
 </td>
 </tr>
 
