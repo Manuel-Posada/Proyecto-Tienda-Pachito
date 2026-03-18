@@ -19,7 +19,7 @@
 </tr>
 
 <tr>
-<td colspan="3"><b>¿Cómo opera el sistema actualmente? /b><br><br>
+<td colspan="3"><b>¿Cómo opera el sistema actualmente? <br><br>
 Actualmente las compras de productos a proveedores se registran manualmente o se recuerdan de forma informal, lo que puede generar inconsistencias entre los productos comprados y el inventario registrado.</td>
 </tr>
 
