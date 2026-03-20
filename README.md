@@ -1,39 +1,74 @@
-# Proyecto Tienda Pachito
+# 🛒 Proyecto Tienda Pachito
 
-Sistema de gestión para la administración de una tienda, diseñado para mejorar el control de inventario, registro de ventas y generación de reportes.
+Sistema de gestión para la administración de una tienda local, enfocado en mejorar el control de inventario, registro de ventas y generación de reportes.
 
-## Descripción
+---
 
-Este proyecto tiene como objetivo desarrollar un producto de software que permita administrar las operaciones principales de una tienda, tales como:
+## 📌 Descripción
 
-- Registro de productos
-- Registro de ventas
-- Control de inventario
-- Registro de compras a proveedores
-- Generación de reportes de ventas
-- Alertas de stock bajo
+Este proyecto tiene como objetivo desarrollar un sistema que permita gestionar de manera eficiente las operaciones principales de una tienda, reduciendo errores asociados al manejo manual de la información.
 
-El sistema busca mejorar la eficiencia del negocio, reduciendo errores asociados al manejo manual de la información.
+El sistema permite:
 
-## Metodología de desarrollo
+- 📦 Registro de productos  
+- 💰 Registro de ventas  
+- 📊 Control de inventario  
+- 🏪 Registro de compras a proveedores  
+- 📈 Generación de reportes de ventas  
+- ⚠️ Alertas de stock bajo  
 
-El proyecto fue desarrollado utilizando la metodología **Scrum**, organizando el trabajo mediante:
+---
 
-- Product Backlog
-- Historias de usuario
-- Story Map
-- Daily Scrum
-- Requisitos funcionales
+## 🎯 Objetivo del sistema
 
-## Historias de Usuario
+Optimizar la administración del negocio mediante la automatización de procesos clave, mejorando la precisión de los datos y facilitando la toma de decisiones.
 
-Las principales historias de usuario del sistema son:
+---
 
-- HU-01 Registro de productos
-- HU-02 Registro rápido de ventas
-- HU-03 Actualización automática de stock
-- HU-04 Registro de compras a proveedores
-- HU-05 Reporte diario de ventas
-- HU-06 Alerta de stock bajo
+## 🧠 Metodología de desarrollo
 
-## Estructura del repositorio
+El proyecto se desarrolla utilizando la metodología ágil **Scrum**, organizando el trabajo mediante:
+
+- 📋 Product Backlog  
+- 👤 Historias de usuario  
+- 🗺️ Mapa de historias de usuario (Story Map)  
+- 📅 Daily Scrum (actas de reunión)  
+- 📄 Requisitos funcionales  
+
+---
+
+## 👥 Equipo de trabajo
+
+- **Product Owner:** Ángel Antonio Suárez Vera  
+- **Scrum Master:** Manuel Alejandro Posada Zartha  
+- **Development Team:**  
+  - Wilson Alejandro Cespedes Alarcón  
+  - David Felipe Lucero Trujillo  
+
+---
+
+## 🧩 Historias de Usuario
+
+Las funcionalidades del sistema están definidas mediante las siguientes historias de usuario:
+
+- **HU-01:** Registro de productos  
+- **HU-02:** Registro de ventas  
+- **HU-03:** Actualización automática de stock  
+- **HU-04:** Registro de compras a proveedores  
+- **HU-05:** Reporte diario de ventas  
+- **HU-06:** Alerta de stock bajo  
+
+---
+
+## 🗂️ Estructura del repositorio
+
+```bash
+Proyecto-Tienda-Pachito
+│
+├── 1.Plan_De_Trabajo
+├── 2.Actas
+├── 3.Historias_De_Usuario
+├── 4.Requisitos_Funcionales
+├── 5.Prototipos
+├── 6.Diagramas
+└── 7.Evidencias
