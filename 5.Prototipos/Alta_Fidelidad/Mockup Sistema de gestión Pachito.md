@@ -1,3 +1,4 @@
 ## Prototipo del Sistema
 ![Mockup Del Sistema De Gestion De La tienda Pachito](../7.Evidencias/Prototipo_Alta_Fidelidad.png)
+
 **[Ver Mockup de la Tienda Pachito](https://wilsoncespedes.wixsite.com/tienda-pachito)**
