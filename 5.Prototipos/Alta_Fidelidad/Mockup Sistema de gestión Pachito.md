@@ -4,4 +4,4 @@
 
 ---
 
-![Mockup del Sistema de Gestión de la Tienda Pachito](../7.Evidencias/Prototipo_Alta_Fidelidad.png)
+![Mockup del Sistema de Gestión de la Tienda Pachito](7.Evidencias/PrototipoAltaFidelidad.png)
