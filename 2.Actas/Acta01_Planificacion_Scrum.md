@@ -26,7 +26,8 @@
 Ángel Antonio Suárez Vera – Product Owner<br>
 Manuel Alejandro Posada Zartha – Scrum Master<br>
 Wilson Alejandro Cespedes Alarcon – Developer Team<br>
-David Felipe Lucero Trujillo – Developer Team
+David Felipe Lucero Trujillo – Developer Team<br>
+Ángel Antonio Suárez Vasquez - Stake Holder
 </td>
 </tr>
 
