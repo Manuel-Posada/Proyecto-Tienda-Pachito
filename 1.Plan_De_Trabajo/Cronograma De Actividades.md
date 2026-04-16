@@ -1,3 +1,4 @@
+```mermaid
 gantt
     title 📊 Cronograma Tienda Pachito (Scrum)
     dateFormat  YYYY-MM-DD
@@ -38,3 +39,6 @@ gantt
     Sprint 1 Finalizado                  :milestone, 2026-04-24, 0d
     Sprint 2 Finalizado                  :milestone, 2026-05-02, 0d
     Entrega Final Proyecto               :milestone, 2026-05-09, 0d
+```
+
+---
