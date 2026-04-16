@@ -89,12 +89,13 @@ Se estima una velocidad de:
 
 ## 6. Duración del Proyecto
 
-\[
-\frac{65 \, SP}{10 \, SP/sprint} = 6.5 \approx 7 \, sprints
-\]
+- Total de Story Points: **65**
+- Velocidad del equipo: **10 SP por sprint**
+
+Esto da como resultado aproximadamente **7 sprints**.
 
 - Duración de un sprint: **2 semanas**
-- Duración total: **14 semanas**
+- Duración total del proyecto: **14 semanas**
 
 ---
 
@@ -103,11 +104,7 @@ Se estima una velocidad de:
 - Costo por sprint: **$1,000,000 COP**
 - Número de sprints: **7**
 
-**Costo total estimado:**
-
-\[
-7 \times 1,000,000 = 7,000,000 \, COP
-\]
+**Costo total estimado: $7,000,000 COP**
 
 ---
 
