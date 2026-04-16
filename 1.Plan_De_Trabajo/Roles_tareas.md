@@ -9,6 +9,7 @@
 
 **Scrum Master:**  
 ![Foto wilson](../7.Evidencias/manuel.png)
+
 Manuel Alejandro Posada Zartha 
 
 **Development Team:**  
