@@ -36,7 +36,7 @@ Las funcionalidades no se entregan en el tiempo planeado.
 
 ##  Matriz de riesgos
 
-![Matriz de riesgos](../9.Evidencias/Diagramas/Matriz de riesgos.png)
+![Matriz de riesgos](../9.Evidencias/Diagramas/MatrizDeRiesgos.png)
 
 ---
 
