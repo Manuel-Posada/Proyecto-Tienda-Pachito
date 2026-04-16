@@ -1,7 +1,7 @@
 # 🛠️ Herramientas del Proyecto
 
 ## 🔹 Backend – Python con Django
-![logo django](../7.Evidencias/django-logo-positive.png)
+![logo django](../9.Evidencias/Logos/django-logo-positive.png)
 
 Para el desarrollo del backend se utilizará **Python** junto con el framework **Django**.
 
@@ -26,7 +26,7 @@ Esto lo convierte en una herramienta ideal para garantizar la correcta funcional
 ---
 
 ## 🔹 Frontend – Angular
-![logo angular](../7.Evidencias/Angular_gradient_logo.png)
+![logo angular](../9.Evidencias/Logos/Angular_gradient_logo.png)
 
 Para el desarrollo del frontend se utilizará el framework **Angular**.
 
@@ -51,7 +51,7 @@ Esto asegura una interfaz clara, intuitiva y eficiente para el uso diario de la 
 ---
 
 ## 🔹 Base de Datos – MySQL Workbench
-![logo mySQLworkbench](../7.Evidencias/mysqlworkbench_93532.png)
+![logo mySQLworkbench](../9.Evidencias/Logos/mysqlworkbench_93532.png)
 
 Para la gestión de la base de datos se utilizará **MySQL Workbench**.
 
