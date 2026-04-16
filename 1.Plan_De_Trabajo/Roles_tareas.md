@@ -4,6 +4,7 @@
 
 **Product Owner:**  
 ![Foto angel](../7.Evidencias/angel.png)
+
 Ángel Antonio Suárez Vera  
 
 **Scrum Master:**  
@@ -11,10 +12,11 @@
 Manuel Alejandro Posada Zartha 
 
 **Development Team:**  
-- Wilson Alejandro Cespedes Alarcon  
 ![Foto wilson](../7.Evidencias/alejandro.png)
-- David Felipe Lucero Trujillo  
+- Wilson Alejandro Cespedes Alarcon  
+
 ![Foto felipe](../7.Evidencias/felipe.png)
+- David Felipe Lucero Trujillo  
 
 **Stakeholder:**  
 Ángel Antonio Suárez Vasquez  
