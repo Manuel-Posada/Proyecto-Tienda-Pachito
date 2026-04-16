@@ -37,17 +37,3 @@ gantt
 ```
 
 ---
-
-
-
----
-
-
-```mermaid
-    section Entregables
-    Entrega Sprint 1     :milestone, 2025-04-21, 0d
-    Entrega Sprint 2     :milestone, 2025-04-28, 0d
-    Entrega Final        :milestone, 2025-05-05, 0d
-```
-
----
