@@ -3,18 +3,18 @@
 ## 🔹 Roles del Equipo
 
 **Product Owner:**  
-![Foto angel](7.Evidencias/angel.png)
+![Foto angel](../7.Evidencias/angel.png)
 Ángel Antonio Suárez Vera  
 
 **Scrum Master:**  
-![Foto wilson](7.Evidencias/manuel.png)
+![Foto wilson](../7.Evidencias/manuel.png)
 Manuel Alejandro Posada Zartha 
 
 **Development Team:**  
 - Wilson Alejandro Cespedes Alarcon  
-![Foto wilson](7.Evidencias/alejandro.png)
+![Foto wilson](../7.Evidencias/alejandro.png)
 - David Felipe Lucero Trujillo  
-![Foto felipe](7.Evidencias/felipe.png)
+![Foto felipe](../7.Evidencias/felipe.png)
 
 **Stakeholder:**  
 Ángel Antonio Suárez Vasquez  
