@@ -3,12 +3,12 @@
 ## 🔹 Roles del Equipo
 
 **Product Owner:**  
-![Foto angel](../7.Evidencias/angel.png)
+![Foto Angel](../7.Evidencias/angel.png)
 
 Ángel Antonio Suárez Vera  
 
 **Scrum Master:**  
-![Foto wilson](../7.Evidencias/manuel.png)
+![Foto Manuel](../7.Evidencias/manuel.png)
 
 Manuel Alejandro Posada Zartha 
 
