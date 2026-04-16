@@ -1,5 +1,3 @@
-El problema es que Mermaid **no soporta** el símbolo `└─` ni subtareas anidadas visualmente. Te lo arreglo con una estructura limpia y válida que sí renderiza bien en GitHub:
-
 ```mermaid
 gantt
     title Cronograma Tienda Pachito – Scrum
