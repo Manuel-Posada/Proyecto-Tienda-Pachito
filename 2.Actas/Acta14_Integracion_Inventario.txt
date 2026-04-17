@@ -1,0 +1,68 @@
+<table>
+<tr>
+<th colspan="3">Acta 14</th>
+</tr>
+
+<tr>
+<th>Proyecto</th>
+<th colspan="2">Tipo de reunión</th>
+</tr>
+
+<tr>
+<td>Tienda Pachito</td>
+<td colspan="2">Daily Scrum</td>
+</tr>
+
+<tr>
+<th>Fecha</th>
+<th>Duración</th>
+<th>Participantes</th>
+</tr>
+
+<tr>
+<td>14/04/2026<br>12:30 pm</td>
+<td>15 min</td>
+<td>
+Ángel Antonio Suárez Vera – Product Owner<br>
+Manuel Alejandro Posada Zartha – Scrum Master<br>
+Wilson Alejandro Cespedes Alarcon – Developer Team<br>
+David Felipe Lucero Trujillo – Developer Team
+</td>
+</tr>
+
+<tr>
+<th colspan="3">Avances desde la última reunión</th>
+</tr>
+
+<tr>
+<td colspan="3">
+1. Se completó la HU-02 (Registro de ventas).<br><br>
+2. Se implementó el cálculo automático del total de ventas.<br><br>
+3. Se inició la HU-03 (Control de inventario).<br><br>
+4. Se actualizaron los diagramas de clases y secuencia.
+</td>
+</tr>
+
+<tr>
+<th colspan="3">Plan hasta la próxima reunión</th>
+</tr>
+
+<tr>
+<td colspan="3">
+1. Finalizar HU-03.<br><br>
+2. Implementar validación de stock disponible.<br><br>
+3. Integrar módulos de productos y ventas.
+</td>
+</tr>
+
+<tr>
+<th colspan="3">Impedimentos</th>
+</tr>
+
+<tr>
+<td colspan="3">
+Ajustes en la lógica de actualización del inventario.
+</td>
+</tr>
+
+</table>
