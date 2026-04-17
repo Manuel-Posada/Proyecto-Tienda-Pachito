@@ -75,7 +75,7 @@ Comprender el funcionamiento actual del negocio, identificar problemas en la ges
 </tr>
 <tr>
 <td colspan="3">
-📎 <a href="./9.Evidencias/Audio/Entrevista_Spring_Review.mp3">Escuchar entrevista con stakeholder (MP3)</a>
+📎 <a href="./9.Evidencias/Audios/Entrevista_Descubrimiento.mp3">Escuchar entrevista con stakeholder (MP3)</a>
 </td>
 </tr>
 </table>
