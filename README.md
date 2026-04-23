@@ -69,6 +69,8 @@ Proyecto-Tienda-Pachito
 ├── 2.Actas
 ├── 3.Historias_De_Usuario
 ├── 4.Requisitos_Funcionales
-├── 5.Prototipos
-├── 6.Diagramas
-└── 7.Evidencias
+├── 5.Requisitos_No_Funcionales
+├── 6.Prototipos
+├── 7.DiagramasUML
+├── 8.Aplicación
+└── 9.Evidencias
