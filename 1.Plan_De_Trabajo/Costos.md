@@ -1,115 +1,189 @@
-# 📊 Estimación de Costos del Proyecto
-## Método: Story Points
+# Estimación de Costos — Sistema de Gestión Tienda Pachito
+**Método:** Story Points (Secuencia de Fibonacci) + Conversión a horas y COP  
+**Proyecto:** Sistema básico de gestión para tienda local Pachito  
+**Equipo:** 4 personas (Product Owner, Scrum Master, 2 Developers)  
+**Sprints:** 3 sprints de 2 semanas cada uno (6 semanas totales)
 
 ---
 
-## 1. Introducción
+## 1. Criterios de estimación
 
-La estimación de costos del proyecto se realizó utilizando la técnica de **Story Points**, basada en la complejidad relativa de cada tarea definida en el mapa de historias de usuario.
+| Story Points | Significado | Ejemplo |
+|:---:|---|---|
+| 1 | Tarea trivial, menos de 1 hora | Ajuste de texto o validación simple |
+| 2 | Tarea simple, ~2 horas | Formulario básico sin lógica |
+| 3 | Tarea estándar, ~4 horas | CRUD completo de una entidad |
+| 5 | Tarea media, ~8 horas | Módulo con lógica de negocio |
+| 8 | Tarea compleja, ~16 horas | Módulo con múltiples integraciones |
+| 13 | Tarea muy compleja, ~24 horas | Módulo crítico con pruebas extensas |
 
-Se empleó la serie de Fibonacci como escala de medición.
-
----
-
-## 2. Escala de Story Points
-
-**1, 2, 3, 5, 8, 13**
-
-| Story Points | Complejidad |
-|-------------|------------|
-| 1 | Muy baja |
-| 2 - 3 | Baja |
-| 5 | Media |
-| 8 | Alta |
-| 13 | Muy alta |
+**Conversión base:**  
+- Developer Junior: **1 SP = 2 horas**  
+- Basado en salario Junior Colombia: **$8.40 USD/hora ≈ $34.000 COP/hora** (TRM ~$4.050)
 
 ---
 
-## 3. Estimación por Módulos y Tareas
+## 2. Estimación por Historia de Usuario
 
-### 📦 Gestión de Productos
+### 🔵 Sprint 1 — Prioridad Alta
 
-- Registrar producto → **5 SP**
-- Editar precio → **3 SP**
+#### PB-01 — Registro de Productos
 
----
+| ID | Tarea | SP |
+|---|---|:---:|
+| T1 | Diseñar tabla Productos en base de datos | 2 |
+| T2 | Crear modelo Producto | 2 |
+| T3 | Crear formulario de registro de producto | 3 |
+| T4 | Implementar guardado en base de datos | 3 |
+| T5 | Implementar edición de precio | 2 |
+| T6 | Validar campos obligatorios | 1 |
+| T7 | Pruebas de registro y edición | 2 |
+| **Total PB-01** | | **15 SP** |
 
-### 🛒 Gestión de Ventas
+#### PB-02 — Registro rápido de ventas
 
-- Registrar ventas → **8 SP**
-- Ingresar cantidad → **2 SP**
-- Calcular total → **3 SP**
+| ID | Tarea | SP |
+|---|---|:---:|
+| T8 | Diseñar tabla Ventas | 2 |
+| T9 | Crear interfaz de selección de productos | 3 |
+| T10 | Implementar ingreso de cantidad vendida | 2 |
+| T11 | Programar cálculo automático del total | 3 |
+| T12 | Guardar venta en base de datos | 2 |
+| T13 | Validar cantidades ingresadas | 1 |
+| T14 | Pruebas de registro de ventas | 2 |
+| **Total PB-02** | | **15 SP** |
 
----
+#### PB-03 — Actualización automática de stock
 
-### 📊 Control de Inventario
+| ID | Tarea | SP |
+|---|---|:---:|
+| T15 | Implementar descuento automático de stock | 5 |
+| T16 | Mostrar stock actualizado en pantalla | 2 |
+| T17 | Validar disponibilidad antes de vender | 3 |
+| T18 | Mostrar mensaje de stock insuficiente | 1 |
+| T19 | Pruebas de actualización de inventario | 3 |
+| **Total PB-03** | | **14 SP** |
 
-- Descontar stock → **5 SP**
-- Validar stock → **5 SP**
-- Mostrar stock → **3 SP**
-
----
-
-### 📥 Compras
-
-- Registrar compra → **5 SP**
-- Actualizar stock → **5 SP**
-- Guardar fecha → **2 SP**
-
----
-
-### 📈 Reportes
-
-- Ver ventas del día → **3 SP**
-- Total vendido → **3 SP**
-- Filtrar por fecha → **5 SP**
-
----
-
-### 🔔 Alertas
-
-- Definir stock mínimo → **3 SP**
-- Mostrar alerta → **5 SP**
+> **Total Sprint 1: 44 SP**
 
 ---
 
-## 4. Total de Story Points
+### 🟡 Sprint 2 — Prioridad Media
 
-**Total estimado: 65 Story Points**
+#### PB-04 — Registro de compras a proveedores
 
----
+| ID | Tarea | SP |
+|---|---|:---:|
+| T20 | Diseñar tabla Compras en base de datos | 2 |
+| T21 | Crear interfaz de selección de producto a comprar | 3 |
+| T22 | Implementar suma automática al stock | 5 |
+| T23 | Guardar fecha de compra | 1 |
+| T24 | Pruebas de registro de compras | 2 |
+| **Total PB-04** | | **13 SP** |
 
-## 5. Velocidad del Equipo
+#### PB-05 — Reporte diario automático
 
-Se estima una velocidad de:
+| ID | Tarea | SP |
+|---|---|:---:|
+| T25 | Calcular total vendido del día | 5 |
+| T26 | Mostrar número de productos vendidos | 3 |
+| T27 | Implementar filtro por fecha | 5 |
+| T28 | Generar resumen visual claro | 3 |
+| T29 | Pruebas de generación de reportes | 3 |
+| **Total PB-05** | | **19 SP** |
 
-**10 Story Points por sprint**
-
----
-
-## 6. Duración del Proyecto
-
-- Total de Story Points: **65**
-- Velocidad del equipo: **10 SP por sprint**
-
-Esto da como resultado aproximadamente **7 sprints**.
-
-- Duración de un sprint: **2 semanas**
-- Duración total del proyecto: **14 semanas**
-
----
-
-## 7. Estimación de Costos
-
-- Costo por sprint: **$1,000,000 COP**
-- Número de sprints: **7**
-
-**Costo total estimado: $7,000,000 COP**
+> **Total Sprint 2: 32 SP**
 
 ---
 
-## 8. Conclusión
+### 🟢 Sprint 3 — Prioridad Baja
 
-El uso de Story Points permitió estimar el esfuerzo del proyecto considerando todas las tareas del sistema, alineadas con el mapa de historias de usuario.
+#### PB-06 — Alerta de stock bajo
 
-Este enfoque facilita la planificación del tiempo, la asignación de recursos y la toma de decisiones durante el desarrollo del sistema.
+| ID | Tarea | SP |
+|---|---|:---:|
+| T30 | Crear configuración de stock mínimo por producto | 3 |
+| T31 | Implementar lógica de evaluación de mínimo | 5 |
+| T32 | Mostrar alerta visual en pantalla | 3 |
+| T33 | Guardar configuración en base de datos | 2 |
+| T34 | Pruebas de alerta de stock | 2 |
+| **Total PB-06** | | **15 SP** |
+
+> **Total Sprint 3: 15 SP**
+
+---
+
+## 3. Resumen de Story Points por Sprint
+
+| Sprint | Historias | Story Points | % del proyecto |
+|---|---|:---:|:---:|
+| Sprint 1 | PB-01, PB-02, PB-03 | 44 SP | 48% |
+| Sprint 2 | PB-04, PB-05 | 32 SP | 35% |
+| Sprint 3 | PB-06 | 15 SP | 16% |
+| **TOTAL** | **6 historias** | **91 SP** | **100%** |
+
+---
+
+## 4. Conversión a horas y costos en COP
+
+### Supuestos
+- 1 SP = 2 horas de trabajo (perfil Junior, equipo universitario)
+- Tarifa hora Junior Colombia: **$34.000 COP/hora**
+- TRM referencia: $4.050 COP por USD
+- Equipo de desarrollo: **2 Developers**
+- Duración sprint: 2 semanas (10 días hábiles, 6 horas/día efectivas)
+
+### Cálculo de horas y costo por sprint
+
+| Sprint | SP | Horas totales | Horas por developer | Costo/hora | Costo total |
+|---|:---:|:---:|:---:|---|---|
+| Sprint 1 | 44 | 88 horas | 44 horas | $34.000 | **$2.992.000 COP** |
+| Sprint 2 | 32 | 64 horas | 32 horas | $34.000 | **$2.176.000 COP** |
+| Sprint 3 | 15 | 30 horas | 15 horas | $34.000 | **$1.020.000 COP** |
+| **TOTAL** | **91** | **182 horas** | **91 horas c/u** | | **$6.188.000 COP** |
+
+---
+
+## 5. Estimación de precio al cliente (con margen de ganancia)
+
+Para un proyecto real se aplica un margen sobre el costo base para cubrir imprevistos, herramientas y ganancia:
+
+| Concepto | Valor |
+|---|---|
+| Costo base del equipo | $6.188.000 COP |
+| Margen de imprevistos (15%) | $928.200 COP |
+| Margen de ganancia (20%) | $1.237.600 COP |
+| **Precio estimado al cliente** | **$8.353.800 COP** |
+| **Precio redondeado al cliente** | **~$8.400.000 COP** |
+
+---
+
+## 6. Cronograma estimado
+
+| Sprint | Semanas | Fechas estimadas | Entregable |
+|---|:---:|---|---|
+| Sprint 1 | 2 semanas | Semana 1 – Semana 2 | Registro productos, ventas y stock |
+| Sprint 2 | 2 semanas | Semana 3 – Semana 4 | Compras y reportes |
+| Sprint 3 | 2 semanas | Semana 5 – Semana 6 | Alertas de stock |
+| **Total** | **6 semanas** | | **Sistema completo** |
+
+---
+
+## 7. Velocidad del equipo
+
+La velocidad es la cantidad de SP que el equipo completa por sprint:
+
+| Sprint | SP completados | Velocidad |
+|---|:---:|---|
+| Sprint 1 | 44 SP | Alta (funcionalidades críticas) |
+| Sprint 2 | 32 SP | Media (módulos de soporte) |
+| Sprint 3 | 15 SP | Baja (mejoras opcionales) |
+| **Promedio** | **~30 SP/sprint** | |
+
+> **Nota:** La velocidad disminuye progresivamente porque los sprints posteriores tienen menos historias pero con mayor complejidad de integración.
+
+---
+
+*Estimación realizada con el método Story Points usando secuencia de Fibonacci.*  
+*Tarifa basada en salario promedio desarrollador Junior Colombia (2025).*  
+*Universidad de Ibagué — Ingeniería de Software I — Grupo 02*
