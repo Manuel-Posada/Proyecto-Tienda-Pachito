@@ -11,11 +11,11 @@
 | Story Points | Significado | Ejemplo |
 |:---:|---|---|
 | 1 | Tarea trivial, menos de 1 hora | Ajuste de texto o validación simple |
-| 2 | Tarea simple, ~2 horas | Formulario básico sin lógica |
-| 3 | Tarea estándar, ~4 horas | CRUD completo de una entidad |
-| 5 | Tarea media, ~8 horas | Módulo con lógica de negocio |
-| 8 | Tarea compleja, ~16 horas | Módulo con múltiples integraciones |
-| 13 | Tarea muy compleja, ~24 horas | Módulo crítico con pruebas extensas |
+| 2 | Tarea simple, 2 horas | Formulario básico sin lógica |
+| 3 | Tarea estándar, 4 horas | CRUD completo de una entidad |
+| 5 | Tarea media, 8 horas | Módulo con lógica de negocio |
+| 8 | Tarea compleja, 16 horas | Módulo con múltiples integraciones |
+| 13 | Tarea muy compleja, 24 horas | Módulo crítico con pruebas extensas |
 
 **Conversión base:**  
 - Developer Junior: **1 SP = 2 horas**  
