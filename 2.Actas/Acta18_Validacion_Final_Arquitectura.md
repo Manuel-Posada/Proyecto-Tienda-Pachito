@@ -51,7 +51,7 @@ David Felipe Lucero Trujillo – Developer Team
 <td colspan="3">
 1. Preparar la exposición del proyecto.<br><br>
 2. Revisar documentación final.<br><br>
-3. Validar cumplimiento de la rúbrica del examen. [Ver documentación]("../1.Plan_De_Trabajo/Arquitectura y patrones.md")
+3. Validar cumplimiento de la rúbrica del examen. [Ver documentación](../1.Plan_De_Trabajo/arquitectura_y_patrones.md)
 </td>
 </tr>
 
