@@ -24,7 +24,7 @@ Cada uno de estos principios contribuye a mejorar la calidad del software.
 
 ## 🔹 Aplicación en el Proyecto
 
-### 🟢 Responsabilidad Única (SRP)
+### 🟢 Single Responsibility Principle
 
 Cada clase del sistema tiene una única responsabilidad.
 
@@ -38,7 +38,7 @@ Esto permite que los cambios en una funcionalidad no afecten otras partes del si
 
 ---
 
-### 🔵 Abierto/Cerrado (OCP)
+### 🔵 Open/Closed Principle 
 
 El sistema está diseñado para permitir agregar nuevas funcionalidades sin modificar el código existente.
 
@@ -51,7 +51,7 @@ Esto se logra mediante el uso de clases base y herencia.
 
 ---
 
-### 🟡 Sustitución de Liskov (LSP)
+### 🟡 Liskov Substitution Principle 
 
 Las clases hijas pueden reemplazar a las clases padre sin alterar el funcionamiento del sistema.
 
@@ -64,7 +64,7 @@ Esto garantiza coherencia en el diseño del sistema.
 
 ---
 
-### 🟠 Segregación de Interfaces (ISP)
+### 🟠 Interface Segregation Principle
 
 Se evita obligar a las clases a implementar métodos que no necesitan.
 
@@ -77,7 +77,7 @@ Esto hace el sistema más claro y reduce dependencias innecesarias.
 
 ---
 
-### 🔴 Inversión de Dependencias (DIP)
+### 🔴 Dependency Inversion Principle
 
 Las clases dependen de abstracciones y no de implementaciones concretas.
 
