@@ -39,6 +39,9 @@ David Felipe Lucero Trujillo – Developer Team
 1. Se completó la documentación de arquitectura del sistema.<br><br>
 2. Se integraron los patrones de diseño en los diagramas UML.<br><br>
 3. Se validó la coherencia entre backlog, historias de usuario y arquitectura.<br><br>
+  <a href="../1.Plan_De_Trabajo/Arquitectura_y_patrones.md">
+  Ver documentación
+</a>
 4. Se organizaron todos los archivos en el repositorio de GitHub.
 </td>
 </tr>
@@ -52,9 +55,7 @@ David Felipe Lucero Trujillo – Developer Team
 1. Preparar la exposición del proyecto.<br><br>
 2. Revisar documentación final.<br><br>
 3. Validar cumplimiento de la rúbrica del examen. 
-<a href="../1.Plan_De_Trabajo/Arquitectura_y_patrones.md">
-  Ver documentación
-</a>
+
   
 </td>
 </tr>
