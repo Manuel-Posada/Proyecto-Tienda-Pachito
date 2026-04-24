@@ -39,10 +39,10 @@ David Felipe Lucero Trujillo – Developer Team
 1. Se completó la documentación de arquitectura del sistema.<br><br>
 2. Se integraron los patrones de diseño en los diagramas UML.<br><br>
 3. Se validó la coherencia entre backlog, historias de usuario y arquitectura.<br><br>
-  <a href="../1.Plan_De_Trabajo/Arquitectura_y_patrones.md">
+4. Se organizaron todos los archivos en el repositorio de GitHub.
+   <a href="../1.Plan_De_Trabajo/Arquitectura_y_patrones.md">
   Ver documentación
 </a>
-4. Se organizaron todos los archivos en el repositorio de GitHub.
 </td>
 </tr>
 
