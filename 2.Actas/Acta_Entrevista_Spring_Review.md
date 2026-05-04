@@ -34,7 +34,7 @@ Stakeholder (Dueño de la tienda)
 <tr>
 <td colspan="3">
 🎧 Audio de la reunión:<br>
-<a href="./9.Evidencias/Audios/Entrevista_Spring_Review.mp3">Escuchar audio</a>
+<a href="../9.Evidencias/Audios/Entrevista_Spring_Review.mp3">Escuchar audio</a>
 </td>
 </tr>
 
