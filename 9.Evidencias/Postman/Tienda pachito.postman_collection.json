@@ -1,51 +1,371 @@
 {
   "info": {
     "_postman_id": "3c59ef45-2d6e-4984-aee2-84bd71671987",
-    "name": "Tienda pachito",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "_exporter_id": "54492830",
-    "_collection_link": "https://go.postman.co/collection/54492830-3c59ef45-2d6e-4984-aee2-84bd71671987?source=collection_link"
+    "name": "Tienda Pachito API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8000"
+    },
+    {
+      "key": "producto_id",
+      "value": "1"
+    }
+  ],
   "item": [
     {
-      "name": "Listar productos",
-      "request": {
-        "method": "GET",
-        "header": []
-      },
-      "response": []
+      "name": "📦 Productos",
+      "item": [
+        {
+          "name": "Listar productos",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/api/productos/"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Crear producto",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Arroz 1kg\",\n  \"precio\": 2500,\n  \"stock\": 50,\n  \"stock_minimo\": 10,\n  \"emoji\": \"🌾\"\n}"
+            },
+            "url": "{{base_url}}/api/productos/"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Producto creado con status 201\", function () {",
+                  "    pm.response.to.have.status(201);",
+                  "});",
+                  "let json = pm.response.json();",
+                  "pm.collectionVariables.set(\"producto_id\", json.id);",
+                  "console.log(\"producto_id guardado:\", json.id);"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Ver producto por ID",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/api/productos/{{producto_id}}/"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Editar producto",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Arroz 1kg Premium\",\n  \"precio\": 3000,\n  \"stock_minimo\": 15\n}"
+            },
+            "url": "{{base_url}}/api/productos/{{producto_id}}/"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Producto actualizado con status 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Productos con stock bajo",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/api/alertas/stock/"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Eliminar producto",
+          "request": {
+            "method": "DELETE",
+            "url": "{{base_url}}/api/productos/{{producto_id}}/"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Eliminado con status 204 o error controlado 400\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([204, 400]);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        }
+      ]
     },
     {
-      "name": "Crear producto",
-      "request": {
-        "method": "GET",
-        "header": []
-      },
-      "response": []
+      "name": "💰 Ventas",
+      "item": [
+        {
+          "name": "Listar ventas",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/api/ventas/"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Ventas por fecha",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/api/ventas/?fecha={{fecha_hoy}}"
+          },
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  "const hoy = new Date();",
+                  "const fecha = hoy.getFullYear() + '-' +",
+                  "  String(hoy.getMonth() + 1).padStart(2, '0') + '-' +",
+                  "  String(hoy.getDate()).padStart(2, '0');",
+                  "pm.collectionVariables.set('fecha_hoy', fecha);"
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Registrar venta",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"producto_id\": {{producto_id}},\n  \"cantidad\": 2\n}"
+            },
+            "url": "{{base_url}}/api/ventas/"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Venta registrada con status 201\", function () {",
+                  "    pm.response.to.have.status(201);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        }
+      ]
     },
     {
-      "name": "Registrar venta",
-      "request": {
-        "method": "GET",
-        "header": []
-      },
-      "response": []
+      "name": "🛒 Compras",
+      "item": [
+        {
+          "name": "Listar compras",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/api/compras/"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Registrar compra",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"producto_id\": {{producto_id}},\n  \"cantidad\": 10,\n  \"costo_unitario\": 3000\n}"
+            },
+            "url": "{{base_url}}/api/compras/"
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Compra registrada con status 201\", function () {",
+                  "    pm.response.to.have.status(201);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        }
+      ]
     },
     {
-      "name": "Registrar compra",
-      "request": {
-        "method": "GET",
-        "header": []
-      },
-      "response": []
-    },
-    {
-      "name": "Reporte diario",
-      "request": {
-        "method": "GET",
-        "header": []
-      },
-      "response": []
+      "name": "📊 Reportes",
+      "item": [
+        {
+          "name": "Reporte diario",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/api/reportes/diario/?fecha={{fecha_hoy}}"
+          },
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  "const hoy = new Date();",
+                  "const fecha = hoy.getFullYear() + '-' +",
+                  "  String(hoy.getMonth() + 1).padStart(2, '0') + '-' +",
+                  "  String(hoy.getDate()).padStart(2, '0');",
+                  "pm.collectionVariables.set('fecha_hoy', fecha);"
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Reporte por rango",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/api/reportes/rango/?fecha_inicio={{fecha_inicio}}&fecha_fin={{fecha_hoy}}"
+          },
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  "const hoy = new Date();",
+                  "const fechaFin = hoy.getFullYear() + '-' +",
+                  "  String(hoy.getMonth() + 1).padStart(2, '0') + '-' +",
+                  "  String(hoy.getDate()).padStart(2, '0');",
+                  "pm.collectionVariables.set('fecha_hoy', fechaFin);",
+                  "const inicio = new Date(hoy);",
+                  "inicio.setDate(inicio.getDate() - 7);",
+                  "const fechaInicio = inicio.getFullYear() + '-' +",
+                  "  String(inicio.getMonth() + 1).padStart(2, '0') + '-' +",
+                  "  String(inicio.getDate()).padStart(2, '0');",
+                  "pm.collectionVariables.set('fecha_inicio', fechaInicio);"
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});"
+                ]
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
