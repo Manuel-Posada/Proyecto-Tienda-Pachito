@@ -5,7 +5,7 @@ import { Producto, Venta, Compra, ReporteDiario, ReporteRango } from '../models/
 
 @Injectable({ providedIn: 'root' })
 export class ApiService {
-  private base = 'http://localhost:8000/api';
+  private base = '/api';
 
   constructor(private http: HttpClient) {}
 
