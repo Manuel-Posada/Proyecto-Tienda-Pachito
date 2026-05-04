@@ -31,7 +31,6 @@ Stakeholder (Dueño de la tienda)
 <tr>
 <th colspan="3">Evidencia de la reunión</th>
 </tr>
-
 <tr>
 <td colspan="3">
 🎧 Audio de la reunión:<br>
@@ -53,7 +52,7 @@ En cuanto a las funcionalidades, confirmó que el sistema cubre adecuadamente su
 
 No se identificaron requerimientos adicionales ni cambios necesarios en esta etapa, ya que el sistema cumple con las expectativas planteadas inicialmente.
 
-🎧 [Escuchar entrevista](./7.Evidencias/Audio/reproductor.html)
+
 </td>
 </tr>
 
