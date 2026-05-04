@@ -15,7 +15,7 @@ import { CopPipe } from '../../shared/pipes/cop.pipe';
 })
 export class ReportesComponent implements OnInit {
   reporte = signal<ReporteDiario | null>(null);
-  fechaSeleccionada = new Date().toISOString().split('T')[0];
+  fechaSeleccionada = new Date().toLocaleDateString('en-CA');
   cargando = signal(false);
 
   constructor(private api: ApiService, private toast: ToastService) {}

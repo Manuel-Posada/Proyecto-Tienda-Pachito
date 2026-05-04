@@ -10,6 +10,7 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'django.contrib.contenttypes',
+    'django.contrib.auth',
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
@@ -34,10 +35,27 @@ REST_FRAMEWORK = {
     ],
 }
 
+# ─── BASE DE DATOS MySQL ───────────────────────────────────────────────────────
+# Cambia NAME, USER y PASSWORD según tu configuración de MySQL Workbench
+DATABASES = {
+    'default': {
+        'ENGINE':   'django.db.backends.mysql',
+        'NAME':     'tienda_pachito',
+        'USER':     'root',
+        'PASSWORD': '1234',
+        'HOST':     'localhost',
+        'PORT':     '3306',
+        'OPTIONS': {
+            'charset': 'utf8mb4',
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        },
+    }
+}
+
 LANGUAGE_CODE = 'es-co'
 TIME_ZONE = 'America/Bogota'
 USE_I18N = True
-USE_TZ = True
+USE_TZ = False
 
 STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
