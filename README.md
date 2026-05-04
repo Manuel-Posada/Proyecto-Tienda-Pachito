@@ -82,12 +82,14 @@ Proyecto-Tienda-Pachito
 ## 📁 Estructura de la aplicación
 
 ```bash
-tienda-pachito/
+8.Aplicacion/
 ├── Backend/
 │   ├── tienda_pachito/
 │   │   ├── settings.py
 │   │   ├── urls.py
 │   │   └── wsgi.py
+│   ├── manage.py
+│   └── requirements.txt
 │   ├── apps/
 │   │   ├── productos/
 │   │   ├── ventas/
@@ -96,8 +98,6 @@ tienda-pachito/
 │   ├── sql/
 │   │   ├── 01_crear_base_datos.sql
 │   │   └── 02_datos_iniciales.sql
-│   ├── manage.py
-│   └── requirements.txt
 └── Frontend/
 ```
 
