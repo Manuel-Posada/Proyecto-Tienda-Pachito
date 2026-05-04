@@ -25,7 +25,7 @@ export class VentasComponent implements OnInit {
     return p ? p.precio * this.cantidad() : 0;
   });
 
-  hoy = new Date().toISOString().split('T')[0];
+  hoy = new Date().toLocaleDateString('en-CA');
 
   constructor(private api: ApiService, private toast: ToastService) {}
 

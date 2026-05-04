@@ -38,7 +38,11 @@ export class InventarioComponent implements OnInit {
     this.cargando.set(true);
     this.api.getProductos().subscribe({
       next: p => { this.productos.set(p); this.cargando.set(false); },
-      error: () => { this.toast.mostrar('Error al cargar productos', 'error'); this.cargando.set(false); }
+      error: (err) => {
+        const msg = err?.error?.error || err?.message || 'Error al cargar productos';
+        this.toast.mostrar(msg, 'error');
+        this.cargando.set(false);
+      }
     });
   }
 
@@ -63,13 +67,28 @@ export class InventarioComponent implements OnInit {
     }
     if (this.modoEdicion()) {
       this.api.actualizarProducto(this.form.id, this.form).subscribe({
-        next: () => { this.toast.mostrar('Producto actualizado'); this.cerrarModal(); this.cargar(); },
-        error: () => this.toast.mostrar('Error al actualizar', 'error')
+        next: () => { this.toast.mostrar('Producto actualizado ✓'); this.cerrarModal(); this.cargar(); },
+        error: (err) => {
+          const msg = err?.error?.error || err?.message || 'Error al actualizar';
+          this.toast.mostrar(msg, 'error');
+        }
       });
     } else {
-      this.api.crearProducto(this.form).subscribe({
-        next: () => { this.toast.mostrar('Producto agregado'); this.cerrarModal(); this.cargar(); },
-        error: () => this.toast.mostrar('Error al crear producto', 'error')
+      // Enviar sin emoji para evitar problemas de charset en MySQL
+      const payload: any = {
+        nombre:       this.form.nombre,
+        precio:       this.form.precio,
+        stock:        this.form.stock,
+        stock_minimo: this.form.stock_minimo,
+        emoji:        this.form.emoji,
+      };
+      this.api.crearProducto(payload).subscribe({
+        next: () => { this.toast.mostrar('Producto agregado ✓'); this.cerrarModal(); this.cargar(); },
+        error: (err) => {
+          const msg = err?.error?.error || err?.message || 'Error al crear producto';
+          this.toast.mostrar(msg, 'error');
+          console.error('Error detallado:', err);
+        }
       });
     }
   }
@@ -78,7 +97,10 @@ export class InventarioComponent implements OnInit {
     if (!confirm(`¿Eliminar "${p.nombre}"?`)) return;
     this.api.eliminarProducto(p.id).subscribe({
       next: () => { this.toast.mostrar('Producto eliminado', 'alerta'); this.cargar(); },
-      error: () => this.toast.mostrar('Error al eliminar', 'error')
+      error: (err) => {
+        const msg = err?.error?.error || 'Error al eliminar';
+        this.toast.mostrar(msg, 'error');
+      }
     });
   }
 
