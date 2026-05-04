@@ -240,7 +240,18 @@ npm start
 ```
 
 ---
+## 🧪 Pruebas Postman
 
+La colección de pruebas está en la carpeta `/postman`.
+
+### Cómo importar en Postman:
+1. Abre Postman
+2. Clic en **Import**
+3. Arrastra el archivo `Tienda_Pachito.postman_collection.json`
+4. También importa el archivo de entorno `Tienda_Pachito.postman_environment.json`
+5. Selecciona el entorno **Tienda Pachito - Local** en la esquina superior derecha
+6. Asegúrate que Django esté corriendo antes de ejecutar las pruebas
+---
 ## 🔧 Solución de Problemas
 
 **Error 1045 (Access denied)**

@@ -1,0 +1,51 @@
+{
+  "info": {
+    "_postman_id": "3c59ef45-2d6e-4984-aee2-84bd71671987",
+    "name": "Tienda pachito",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54492830",
+    "_collection_link": "https://go.postman.co/collection/54492830-3c59ef45-2d6e-4984-aee2-84bd71671987?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Listar productos",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Crear producto",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Registrar venta",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Registrar compra",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Reporte diario",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
