@@ -28,7 +28,6 @@
 **Criterios de aceptación:**
 - RAM mínima: 2 GB
 - Procesador: 1 GHz o superior
-- Sin necesidad de conexión a internet
 
 **Prioridad:** Alta
 
