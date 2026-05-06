@@ -78,4 +78,8 @@ Pequeños ajustes en la claridad de los diagramas.
 </td>
 </tr>
 
+<td colspan="3">
+📎 <a href="../9.Evidencias/Diagramas/Diagramas_Arquitectura">Revisar Diagramas De arquitectura Corregidos
+</a>
+</td>
 </table>
