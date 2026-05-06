@@ -2,6 +2,8 @@
 
 Sistema de gestión para la administración de una tienda local, enfocado en mejorar el control de inventario, registro de ventas y generación de reportes.
 
+Link de la app: https://tienda-pachito-app-production.up.railway.app/dashboard
+
 ---
 
 ## 📌 Descripción
