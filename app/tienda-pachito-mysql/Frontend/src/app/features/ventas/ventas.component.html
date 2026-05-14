@@ -1,0 +1,145 @@
+<div class="ventas-page">
+  <div class="page-header">
+    <div>
+      <h1>Nueva Venta Rápida</h1>
+      <p class="subtitle">PB-02 · COP</p>
+    </div>
+  </div>
+
+  <div class="ventas-grid">
+    <!-- PANEL IZQUIERDO: FORMULARIO -->
+    <div class="card venta-form">
+      <div class="section-label">SELECCIONAR PRODUCTO</div>
+
+      <div class="productos-lista">
+        @for (p of productos(); track p.id) {
+          <div class="producto-item"
+               [class.selected]="estaEnCarrito(p.id)"
+               [class.sin-stock]="p.stock === 0"
+               (click)="p.stock > 0 ? agregarAlCarrito(p) : null">
+            <span class="prod-emoji">{{ p.emoji }}</span>
+            <div class="prod-info">
+              <span class="prod-nombre">{{ p.nombre }}</span>
+              <span class="prod-meta">{{ p.precio | cop }} · Stock: {{ p.stock }} u.</span>
+            </div>
+            @if (p.stock === 0) {
+              <span class="sin-stock-tag">Sin stock</span>
+            }
+            @if (p.alerta_stock && p.stock > 0) {
+              <span class="alerta-tag">⚠</span>
+            }
+            @if (getCantidadEnCarrito(p.id) > 0) {
+              <span class="carrito-badge">{{ getCantidadEnCarrito(p.id) }}</span>
+            }
+          </div>
+        }
+      </div>
+
+      <!-- CARRITO -->
+      @if (carrito().length > 0) {
+        <div class="section-label" style="margin-top: 16px;">CARRITO</div>
+        <div class="carrito-lista">
+          @for (item of carrito(); track item.producto.id) {
+            <div class="carrito-item">
+              <span class="prod-emoji">{{ item.producto.emoji }}</span>
+              <div class="prod-info">
+                <span class="prod-nombre">{{ item.producto.nombre }}</span>
+                <span class="prod-meta">{{ item.producto.precio | cop }} c/u</span>
+              </div>
+              <div class="carrito-controles">
+                <button (click)="decrementar(item.producto.id)">−</button>
+                <span>{{ item.cantidad }}</span>
+                <button (click)="incrementar(item.producto.id)">+</button>
+              </div>
+              <span class="carrito-subtotal">{{ item.producto.precio * item.cantidad | cop }}</span>
+              <button class="carrito-remove" (click)="quitarDelCarrito(item.producto.id)">×</button>
+            </div>
+          }
+        </div>
+      }
+
+      <div class="total-bar">
+        <span>Total (COP)</span>
+        <span class="total-valor">{{ totalCarrito() | cop }}</span>
+      </div>
+
+      <button class="btn-venta" [disabled]="carrito().length === 0 || procesando()" (click)="registrarVenta()">
+        @if (procesando()) {
+          Procesando...
+        } @else {
+          Registrar Venta ({{ carrito().length }} producto{{ carrito().length !== 1 ? 's' : '' }})
+        }
+      </button>
+
+      <!-- RECIENTES -->
+      <div class="recientes-header section-label" style="margin-top: 24px;">RECIENTES</div>
+      @if (gruposVentasHoy().length === 0) {
+        <div class="empty-recientes">No hay ventas hoy</div>
+      }
+      @for (grupo of gruposVentasHoy().slice(0, 4); track grupo[0].id) {
+        <div class="venta-reciente">
+          <div class="vr-info">
+            @if (grupo.length === 1) {
+              <span>{{ grupo[0].producto_nombre }}</span>
+              <span class="vr-meta">x{{ grupo[0].cantidad }} · {{ grupo[0].fecha }}</span>
+            } @else {
+              <span>{{ grupo.length }} productos</span>
+              <span class="vr-meta">
+                {{ grupo[0].producto_nombre }}{{ grupo.length > 1 ? ' +' + (grupo.length - 1) + ' más' : '' }}
+              </span>
+            }
+          </div>
+          <span class="vr-total">{{ totalGrupo(grupo) | cop }}</span>
+          <button class="btn-recibo" title="Ver recibo" (click)="verRecibo(grupo)">🧾</button>
+        </div>
+      }
+    </div>
+
+    <!-- PANEL DERECHO: INVENTARIO RÁPIDO -->
+    <div class="card inventario-rapido">
+      <div class="card-header">
+        <div>
+          <h2>Inventario de Productos</h2>
+          <span class="subtitle">PB-01/PB-03 · COP</span>
+        </div>
+      </div>
+
+      <table class="tabla-mini">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Producto</th>
+            <th>Precio (COP)</th>
+            <th>Stock</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (p of productos(); track p.id) {
+            <tr [class.row-alert]="p.alerta_stock">
+              <td class="td-id">PB-{{ p.id.toString().padStart(2,'0') }}</td>
+              <td>
+                <span class="prod-emoji-sm">{{ p.emoji }}</span>
+                {{ p.nombre }}
+              </td>
+              <td class="td-precio">{{ p.precio | cop }} <span class="eq">=</span></td>
+              <td>
+                <span class="stock-pill" [class.stock-ok]="!p.alerta_stock" [class.stock-low]="p.alerta_stock && p.stock > 0" [class.stock-empty]="p.stock === 0">
+                  {{ p.stock }} u.
+                </span>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- RECIBO -->
+@if (mostrarRecibo()) {
+  <app-recibo
+    [ventas]="reciboVentas()"
+    [cajero]="auth.currentUser()?.nombre || auth.currentUser()?.username || ''"
+    (cerrar)="cerrarRecibo()"
+  />
+}
