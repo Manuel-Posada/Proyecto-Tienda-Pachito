@@ -2,44 +2,63 @@
 
 Sistema de gestión para la administración de una tienda local, enfocado en mejorar el control de inventario, registro de ventas y generación de reportes.
 
-Link de la app: https://tienda-pachito-app-production.up.railway.app/dashboard
+## 🌐 Aplicación desplegada
+
+https://tienda-pachito-app-production.up.railway.app/dashboard
 
 ---
 
-## 📌 Descripción
+# 📌 Descripción
 
-Este proyecto tiene como objetivo desarrollar un sistema que permita gestionar de manera eficiente las operaciones principales de una tienda, reduciendo errores asociados al manejo manual de la información.
+Proyecto desarrollado para optimizar la administración de una tienda mediante la automatización de procesos como:
 
-El sistema permite:
-
-* 📦 Registro de productos
+* 📦 Gestión de inventario
 * 💰 Registro de ventas
-* 📊 Control de inventario
+* 🛒 Venta de múltiples productos mediante carrito
+* 🧾 Generación automática de recibos
+* 📊 Reportes de ventas
 * 🏪 Registro de compras a proveedores
-* 📈 Generación de reportes de ventas
 * ⚠️ Alertas de stock bajo
 
+El sistema busca reducir errores manuales, mejorar el control del negocio y facilitar la administración diaria.
+
 ---
 
-## 🎯 Objetivo del sistema
+# 🚀 Mejoras recientes
+
+## ✅ Nuevas funcionalidades implementadas
+
+* 🧾 Generación automática de recibos para ventas recientes
+* 🛒 Carrito de compras para registrar múltiples productos en una sola venta
+* 🔊 Sonidos interactivos en botones y diferentes acciones de la aplicación
+* 🔍 Barra de búsqueda de productos en el menú de ventas
+* 📜 Barra de desplazamiento en el inventario dentro de nueva venta
+* 🔎 Barra de búsqueda en inventario
+
+Estas mejoras fueron enfocadas en mejorar la experiencia de usuario, usabilidad y mantenimiento del sistema.
+
+---
+
+# 🎯 Objetivo del sistema
 
 Optimizar la administración del negocio mediante la automatización de procesos clave, mejorando la precisión de los datos y facilitando la toma de decisiones.
 
 ---
 
-## 🧠 Metodología de desarrollo
+# 🧠 Metodología de desarrollo
 
 El proyecto se desarrolla utilizando la metodología ágil **Scrum**, organizando el trabajo mediante:
 
 * 📋 Product Backlog
-* 👤 Historias de usuario
-* 🗺️ Mapa de historias de usuario (Story Map)
-* 📅 Daily Scrum (actas de reunión)
-* 📄 Requisitos funcionales
+* 👤 Historias de Usuario
+* 🗺️ Story Map
+* 📅 Actas de reuniones
+* 📄 Requisitos funcionales y no funcionales
+* 📐 Diagramas UML y de arquitectura
 
 ---
 
-## 👥 Equipo de trabajo
+# 👥 Equipo de trabajo
 
 * **Product Owner:** Ángel Antonio Suárez Vera
 * **Scrum Master:** Manuel Alejandro Posada Zartha
@@ -50,7 +69,7 @@ El proyecto se desarrolla utilizando la metodología ágil **Scrum**, organizand
 
 ---
 
-## 🧩 Historias de Usuario
+# 🧩 Historias de Usuario
 
 * **HU-01:** Registro de productos
 * **HU-02:** Registro de ventas
@@ -61,20 +80,27 @@ El proyecto se desarrolla utilizando la metodología ágil **Scrum**, organizand
 
 ---
 
-## 🗂️ Estructura del repositorio
+# 🗂️ Estructura del repositorio
 
 ```bash
-Proyecto-Tienda-Pachito
+Proyecto-Tienda-Pachito/
 │
-├── 1.Plan_De_Trabajo
-├── 2.Actas
-├── 3.Historias_De_Usuario
-├── 4.Requisitos_Funcionales
-├── 5.Requisitos_No_Funcionales
-├── 6.Prototipos
-├── 7.DiagramasUML
-├── 8.Aplicación
-└── 9.Evidencias
+├── docs/
+│   ├── DiagramasUML/
+│   ├── Diagramas_Arquitectura/
+│   ├── Prototipos/
+│   ├── Requisitos_Funcionales/
+│   ├── Requisitos_No_Funcionales/
+│   ├── Evidencias/
+│   ├── Historias_De_Usuario/
+│   ├── Actas/
+│   └── Plan_De_Trabajo/
+│
+├── app/
+│   ├── Backend/
+│   └── Frontend/
+│
+└── README.md
 ```
 
 > **Stack:** Python 3.11 · Django 4.2 · Angular 19 · MySQL 8 · Windows · VS Code
@@ -84,22 +110,26 @@ Proyecto-Tienda-Pachito
 ## 📁 Estructura de la aplicación
 
 ```bash
-8.Aplicacion/
+app/
 ├── Backend/
 │   ├── tienda_pachito/
 │   │   ├── settings.py
 │   │   ├── urls.py
 │   │   └── wsgi.py
-│   ├── manage.py
-│   └── requirements.txt
+│   │
 │   ├── apps/
 │   │   ├── productos/
 │   │   ├── ventas/
 │   │   ├── compras/
 │   │   └── reportes/
+│   │
 │   ├── sql/
 │   │   ├── 01_crear_base_datos.sql
 │   │   └── 02_datos_iniciales.sql
+│   │
+│   ├── manage.py
+│   └── requirements.txt
+│
 └── Frontend/
 ```
 
